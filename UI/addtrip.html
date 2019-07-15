@@ -9,20 +9,47 @@
 		function validate() 
 { 
   
-   if( document.myForm.email.value == "" ) 
+   if( document.myForm.trip_id.value == "" ) 
    { 
-     alert( "Please provide your Email!" ); 
-     document.myForm.email.focus() ; 
+     alert( "Please provide your Trip id!" ); 
+     document.myForm.trip_id.focus() ; 
      return false; 
    } 
-   if( document.myForm.pass.value == "" ) 
+   if( document.myForm.seating_capacity.value == "" ) 
    { 
-     alert( "Please enter your password!" ); 
-     document.myForm.pass.focus() ; 
+     alert( "Please enter Seating Capacity!" ); 
+     document.myForm.seating_capacity.focus() ; 
      return false; 
 
        } 
-   
+   if( document.myForm.orgin.value == "" ) 
+   { 
+     alert( "Please enter Orgin" ); 
+     document.myForm.orgin.focus() ; 
+     return false; 
+
+       } 
+  if( document.myForm.destination.value == "" ) 
+   { 
+     alert( "Please enter Destination" ); 
+     document.myForm.destination.focus() ; 
+     return false; 
+
+       }  
+         if( document.myForm.trip_date.value == "" ) 
+   { 
+     alert( "Please enter Trip Date" ); 
+     document.myForm.trip_date.focus() ; 
+     return false; 
+
+       }  
+         if( document.myForm.fare.value == "" ) 
+   { 
+     alert( "Please enter Fare" ); 
+     document.myForm.fare.focus() ; 
+     return false; 
+
+       }  
    return( true ); 
 } 
 	</script>
@@ -34,7 +61,7 @@
  <center>
 <table>
 	<tr>
-		<TD valign="bottom" align="center">  <img src="images/90deg.png" height="100" width="100">
+		<TD valign="bottom" align="center">  <img src="logo/90deg.png" height="100" width="100">
 			<br>
         <b style=" color: white;"> Way Farer </b>
 		</TD>
@@ -59,10 +86,11 @@
 
 <div class="menus">
 		<center>
-	<button class="dropbtn"><a href="index.html">Home</a></button>
-  <button class="dropbtn"> <a href="trips.html">Trips</a></button>
-   <button class="dropbtn"> <a href="booktrip.html">Book Trip</a></button>
- <button class="dropbtn"> <a href="login.html">Log In</a></button>
+	<button class="dropbtn"><a href="addtrip.html">New Trip</a></button>
+  <button class="dropbtn"> <a href="alltrips.html">All Trips</a></button>
+ <button class="dropbtn"> <a href="bookings.html">All Bookings</a></button>
+  <button class="dropbtn"> <a href="booked.html">User booked</a></button>
+  <button class="dropbtn"> <a href="index.html">Log out</a></button>
   
 	</center>
 	</div>
@@ -78,27 +106,37 @@
 
 </div>
 
-
 <div   class="container">
-<div id="banner"><P>LOGIN FORM</P></div>
+<div id="banner"><P>ADD TRIP FORM</P></div>
 <div id="body">
 <form action="" name="myForm" onsubmit="return(validate());"  class="w3-form">
-<label>Email:</label>
-<input type="text" name="email" autocomplete="none" placeholder="Enter Username"><br><br>
-<label>Password:</label>
-<input type="password" name="pass"  placeholder="Enter password">
-<br><br><br>
+<label>Trip id:</label>
+<input type="text" name="tripid" autocomplete="none" placeholder="Enter Trip Id"><br><br>
+<label>Seating Capacity:</label>
+<input type="text" name="seating_capacity"  placeholder="Enter Seating Capacity">
+<br><br>
+<label>Orgin:</label>
+<input type="text" name="orgin" autocomplete="none" placeholder="Enter An Orgin"><br><br>
+<label>Destination:</label>
+<input type="text" name="destination"  placeholder="Enter Destination">
+<br><br>
+<label>Trip Date:</label>
+<input type="text" name="trip_date"  placeholder="Enter Trip Date">
+<br><br>
+<label>Fare:</label>
+<input type="text" name="fare" autocomplete="none" placeholder="Enter Fair" ><br><br>
+<br>
 <input type="submit" value="Login"   id="buttons" >
 <input type="Reset"  id="buttons" value="Reset">
-	
-  
- </a>
 </form>
-<br>
-<a href="signup.html"><input type="submit" value="Sign up"  style=" width: 360px;  "  id="top">
 </div>
 </div><!-- container closed-->
+
+<br><br>
+
 </div>
+
+
 
 
 
