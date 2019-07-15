@@ -1,0 +1,65 @@
+.container{
+	width:32%;
+	background-color:white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin:0px auto;
+    margin-top:3em;
+    box-sizing: border-box;
+}
+#banner{
+	width:95%;
+	background: grey;
+	padding:8px 10px;
+	color:white;
+}
+#banner p{
+	text-align:center;
+	color: white;
+}
+#body{
+	margin-top:1em;
+    padding-left:10px;
+	padding-bottom:2em;
+	
+}
+label{
+	color:black;
+	font-size:18px;
+	font-family:sans-serif;
+}
+.container input[type='text'], input[type='password'], select
+{
+	width:90%;
+	padding:10px;
+	border-radius:3px;
+	border:2px solid white;
+	border-bottom:2px solid dodgerblue;
+	 background-color:#f6f6f6;
+	border-background:red;
+	margin-top:2em;
+}
+
+#buttons
+{
+	background: #3f6bbc;
+	color: white;
+	height: 40px;
+	width: 49%;
+	border: 0px;
+	transition: 0.7s;
+
+
+}
+#buttons:hover
+{
+	background:  white;
+	color: #3f6bbc;
+	height: 50px;
+	width: 49%;
+	border: 0px;
+	transition: 0.7s;
+	font-size: 15px;
+	transition-delay: 0.1s;
+	transition-timing-function: ease-out;
+	border: 2px solid #3f6bbc;
+}

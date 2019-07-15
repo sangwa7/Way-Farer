@@ -1,0 +1,194 @@
+*
+body
+{
+	background: grey;
+}
+{
+	padding: 0px;
+	margin: 0px;
+	font-family: arial;
+
+}
+
+.all
+{
+	height: auto;
+	width: 90%;
+
+	margin-left: 5%;
+}
+.title
+{
+	background: #1B2F38;
+	padding: 5px;
+    font-family: tahoma;    
+	height: auto;
+	box-shadow: 0px 10px 30px 5px rgba(2, 2, 2, 0.8);;
+
+	min-height: 50px;
+} 
+
+.menus
+{
+	background: #273538;
+	height: auto;
+	min-height: 50px;
+	transition: width 2s;
+	border-left: 150px solid #FFFF1F;
+	border-bottom: 2px solid #FFFF1F;
+}
+
+.social
+{
+	
+	border-radius: 30px;
+	height: auto;
+    right: 2px;
+    top: 180px;
+   	position: fixed;
+
+
+}
+.social img:hover
+{   
+	opacity: 0.3;
+	transition: 0.5s;
+    right: 10px;
+    cursor: pointer;
+    transition-timing-function: ease-in;
+}
+
+.menusleft
+{
+	background: #d0d3cf;
+	margin-top: 2px;
+	height: auto;
+	min-height: 615px;
+	min-width: 150px;
+	transition: width 2s;
+	border-top: 2px solid #3e8e41;
+	border-bottom: 2px solid #3e8e41;
+	position: absolute;
+	float: left;
+	margin-top: 50px;
+}
+
+.content
+{
+	background: #F0F0F0;
+	height: auto;
+	min-height: 700px;
+	position: inherit;
+
+}
+.footer
+{
+	background: #1B2F38;
+	padding: 50px;
+	color: white;
+	min-height: 350px;
+
+}
+.footer table 
+{
+	float: center;	
+	
+}
+
+
+
+.footer table td
+{
+	width: 33%;
+	border-spacing: 30px;
+	padding: 30px;
+	
+}
+
+
+
+
+.footer div p
+{
+	text-align: justify;
+	font-size: 14px;
+	font-family: arial;
+	color: #d6c0b9;
+	margin-top: 20px;
+}
+.footer2
+{
+	background: #1B2F38;
+	height: auto;
+	min-height: 10px;
+
+}
+#top
+{
+	background:  white;
+	color: #3f6bbc;
+	height: 40px;
+	border: 0px;
+	transition: 0.7s;
+	border: 2px solid #3f6bbc;
+
+
+}
+#top:hover
+{
+
+	background:  #3f6bbc;
+	color: white;
+	height: 40px;
+	width: 80px;
+	border: 0px;
+	transition: 0.7s;
+	font-size: 15px;
+	transition-delay: 0.1s;
+	transition-timing-function: ease-out;
+}
+#searchbtn
+{
+	background: #3f6bbc;
+	color: white;
+	height: 35px;
+	width: 80px;
+	border: 0px;
+	transition: 0.7s;
+	transition-timing-function: ease-in;
+	float: right;
+	margin-top: 5px;
+
+}
+.search
+ {
+height: 5px;
+background: #1B2F38;
+}
+.search #searchbtn:hover
+{
+	background:  white;
+	color: #3f6bbc;
+	height: 35px;
+	width: 80px;
+	border: 0px;
+	transition: 0.7s;
+	font-size: 15px;
+	transition-delay: 0.1s;
+	transition-timing-function: ease-out;
+	float: right;
+	margin-top: 5px;
+    border: 1px solid #3f6bbc;
+}
+.search #searchfield
+{
+	height: 32px;
+	width: 300px;
+	float: right;
+	margin-top: 5px;
+	border: 1px solid #3f6bbc;
+	border-radius: 15px 0px 0px 15px;
+    font-family: arial;
+    font-size: 20px;
+
+}
